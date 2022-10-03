@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://twin-cities.umn.edu/'>University of Minnesota</a>. Minneapolis, MN, USA
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: min4.jpg
+  image_circular: False # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Kenneth H. Keller Hall,</p>
+    <p>200 Union St SE,</p>
+    <p>Minneapolis, MN 55455</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+I am a second-year Ph.D. student in Computer Science at the Unversity of Minnesota (UMN) and I am a member of [Knowledge Computing lab](https://knowledge-computing.github.io/) advised by [prof. Yao-Yi Chiang](https://yaoyichi.github.io/). My research focus on building spatial artifical intelligence and constructing deep learning models on large-set of real-world spatiotemporal data. 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Currently, I am working on multi-modal learning to jointly capturing spatial information (e.g., retrieve useful information from real-world imagery datasets) and forecasting fine-grained data by constructing deep learning-based model to explore spatiotemporal dependences. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Previously, I received a M.S. degree in Computer Sciecne from the Purdue University Fort Wayne, advised by [prof. Jin Soung Yoo](https://web.ics.purdue.edu/~jyoo/). Also, I was a member of [Business Intelligence and Information Management Lab](https://users.pfw.edu/coronado/index.html) advised by [prof. Adolfo Coronado](http://www.coronado.site/). 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
