@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-08-22 14:59:00-0400
+date: 2022-10-12 14:59:00-0400
 inline: true
 ---
 
-A demo paper has accepted to SIGSPATIAL 2022.
+I won ACM SIGSPATIAL cnference travel grant!
