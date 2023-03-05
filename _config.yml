@@ -80,16 +80,9 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
-contact_note: >
-<<<<<<< HEAD
-  Best way to reach me is through my Email.
-=======
-<<<<<<< HEAD
-  Best way to reach me is through my Email.
-=======
+contact_note: 
   Best way to reach me is through my Email
->>>>>>> 8353b075bf9fa5d3492f486eea9a92f2bb284cb2
->>>>>>> master
+
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
