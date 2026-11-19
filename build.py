@@ -82,8 +82,8 @@ page=f'''<!doctype html>
 <div class="page-layout"><aside class="profile" aria-label="Profile"><div class="portrait-frame"><img class="portrait" src="assets/portrait.jpg" alt="Min Namgung" width="240" height="280"></div>{content('profile')}</aside>
 <main id="main"><section id="about" aria-labelledby="about-title"><h2 id="about-title">About me</h2>{content('about')}</section>
 {section('news','News',content('news'))}
-{section('research','Selected publications','<div class="publications">'+''.join(articles)+'</div>')}
 {section('recent-work','Recent work',content('recent-work'))}
+{section('research','Selected publications','<div class="publications">'+''.join(articles)+'</div>')}
 {section('service','Service','<p class="section-note">Program committee & reviewing</p>'+content('service'))}
 <footer><span>© 2026 Min Namgung</span><span>Updated November 2026</span></footer>
 </main></div></body></html>'''
