@@ -13,6 +13,7 @@ Edit the Markdown files in `content/` and push to `master`. GitHub Actions runs 
 | `content/news.md` | News updates |
 | `content/publications/*.md` | One selected paper per file; filename order determines display order |
 | `content/recent-work.md` | Broad current research description |
+| `content/teaching.md` | UMN graduate teaching assistant courses |
 | `content/service.md` | PC and reviewing service |
 | `assets/Min_CV.pdf` | Downloadable CV |
 | `assets/portrait.jpg` | Portrait |
