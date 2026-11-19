@@ -6,7 +6,7 @@ from hashlib import sha256
 from html import escape, unescape
 ROOT = Path(__file__).resolve().parent
 
-SECTION_EMOJI = {'news': '📰', 'research': '✒️', 'service': '📝', 'recent-work': '✨', 'teaching': '📚'}
+SECTION_EMOJI = {'news': '📰', 'research': '✒️', 'service': '📝', 'recent-work': '✨'}
 
 def section_emoji(name):
     emoji = SECTION_EMOJI.get(name)
@@ -71,17 +71,6 @@ for file in sorted((ROOT/'content/publications').glob('*.md')):
     articles.append(f'''<article class="publication" data-selected="{meta['selected']}">
     {visual}
     <div class="pub-body"><h3>{inline(title)}</h3>{markdown(body)}<div class="venue">{escape(meta['venue'])} · {escape(meta['year'])}</div></div></article>''')
-profile_html = content('profile')
-profile_links = re.findall(r'<a href="([^"]+)">(?:<svg.*?</svg>)?([^<]+)</a>', profile_html)
-social_links = []
-cv_html = ''
-for url, label in profile_links:
-    if label == 'Curriculum vitae':
-        cv_html = f'<div class="cv-row"><a class="cv-link" href="{url}"><span aria-hidden="true">📄</span> Curriculum vitae</a></div>'
-    else:
-        glyph = '<svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+SOCIAL_ICONS[label]+'</svg>'
-        social_links.append(f'<a href="{url}">{glyph}{label}</a>')
-links_html = ''.join(social_links)
 style_version = sha256((ROOT/'style.css').read_bytes()).hexdigest()[:10]
 page=f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,13 +79,13 @@ page=f'''<!doctype html>
 <meta name="theme-color" content="#87384b"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v={style_version}"></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
 
-<main id="main" class="page-layout"><header class="intro"><div class="intro-text"><h1>Min Namgung</h1>{content('about')}<p class="email">Email: namgu007 AT umn.edu</p><nav class="profile-links" aria-label="Profile links">{links_html}</nav>{cv_html}</div><img class="portrait" src="assets/portrait.jpg" alt="Min Namgung" width="270"></header>
+<div class="page-layout"><aside class="profile" aria-label="Profile"><div class="portrait-frame"><img class="portrait" src="assets/portrait.jpg" alt="Min Namgung" width="240" height="280"></div>{content('profile')}</aside>
+<main id="main"><section id="about" aria-labelledby="about-title"><h2 id="about-title">About me</h2>{content('about')}</section>
 {section('news','News',content('news'))}
 {section('research','Selected publications','<div class="publications">'+''.join(articles)+'</div>')}
 {section('recent-work','Recent work',content('recent-work'))}
-{section('teaching','Teaching',content('teaching'))}
 {section('service','Service','<p class="section-note">Program committee & reviewing</p>'+content('service'))}
 <footer><span>© 2026 Min Namgung</span><span>Updated November 2026</span></footer>
-</main></body></html>'''
+</main></div></body></html>'''
 (ROOT/'index.html').write_text(page)
 print(f'Built concise homepage with {len(articles)} selected publications.')
