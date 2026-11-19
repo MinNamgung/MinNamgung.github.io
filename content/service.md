@@ -1,0 +1,3 @@
+- **Conferences:** AAAI (’26), ACM SIGSPATIAL (’25–’26), The Web Conference (’24), ACM CIKM (’22, Best PC 🏅)
+- **Journals:** IJGIS (’24)
+- **Workshops:** GeoAI (’25–’26), UrbanAI (’25–’26), AAAI-W3PHIAI (’22–’24)

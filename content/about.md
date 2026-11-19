@@ -1,0 +1,3 @@
+I am a Ph.D. candidate in Computer Science and Engineering at the [University of Minnesota Twin Cities](https://twin-cities.umn.edu/), advised by [Yao-Yi Chiang](https://yaoyichi.github.io/) in the [Knowledge Computing Lab](https://knowledge-computing.github.io/).
+
+My research focuses on **multimodal representation learning and spatial AI**, with current interests in learning transferable representations from imagery and text for scene understanding and urban analytics. Previously, I interned at Oak Ridge National Laboratory and received my M.S. and B.S. in Computer Science from Purdue University Fort Wayne.

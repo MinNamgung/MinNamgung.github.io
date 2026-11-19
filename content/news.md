@@ -1,0 +1,4 @@
+- 2026.11 — I serve as an organizer of the UrbanAI workshop at ACM SIGSPATIAL 2026.
+- 2026.08 — Our paper “GELATTO: Geospatial Relation-Aware Soft Target Learning for Multimodal Region Representation” was accepted to ACM SIGSPATIAL 2026! 🌟
+- 2025.09 — Our papers are accepted to the UrbanAI and UMFM workshops at ACM SIGSPATIAL 2025!
+- 2025.08 — Our paper “Transit for All: Mapping Equitable Bike2Subway Connection using Region Representation Learning” was accepted to ACM SIGSPATIAL 2025!
